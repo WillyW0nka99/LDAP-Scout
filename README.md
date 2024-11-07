@@ -94,9 +94,10 @@ User: Administrator
 
 --------------------------------------------------
 
-User: Guest
-  Non-Standard Field: logonHours -> [': ////////////////////////////']
-  Non-Standard Field: lastLogonTimestamp -> ['133754809226193468']
+User: support
+  Non-Standard Field: info -> ['Ironside47pleasure40Watchful']
+  Rare Standard Field: memberOf -> ['CN=Shared Support Accounts,CN=Users,DC=support,DC=htb', 'CN=Remote Management Users,CN=Builtin,DC=support,DC=htb']
+
 
 --------------------------------------------------
 ```
