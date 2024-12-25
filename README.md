@@ -18,7 +18,7 @@ This tool parses LDAP output from a file, identifies and displays non-standard f
 
 ### Installation
 
-1. Clone this repository or download `ldap-u.py`.
+1. Clone this repository or download `LDAP-Scout.py`.
 2. Install dependencies:
    ```bash
    pip install -r requirements.txt
@@ -29,7 +29,7 @@ This tool parses LDAP output from a file, identifies and displays non-standard f
 Run the script with an LDAP output file and choose your options:
 
 ```bash
-python3 ldap-u.py <input_file> [OPTIONS]
+python3 LDAP-Scout.py <input_file> [OPTIONS]
 ```
 
 ### Example LDAP Search
@@ -54,27 +54,27 @@ ldapsearch -x -LLL -H ldap://<LDAP_SERVER> -D '<bind_dn>' -w <password> -b '<bas
 
 1. **List All Fields in LDAP Data**:
    ```bash
-   python3 ldap-u.py ldap_output.txt --list-fields
+   python3 LDAP-Scout.py ldap_output.txt --list-fields
    ```
 
 2. **List All Users**:
    ```bash
-   python3 ldap-u.py ldap_output.txt --list-users
+   python3 LDAP-Scout.py ldap_output.txt --list-users
    ```
 
 3. **Exclude Specific Fields**:
    ```bash
-   python3 ldap-u.py ldap_output.txt --exclude memberOf description
+   python3 LDAP-Scout.py ldap_output.txt --exclude memberOf description
    ```
 
 4. **Include a Specific Field in Output**:
    ```bash
-   python3 ldap-u.py ldap_output.txt --include info
+   python3 LDAP-Scout.py ldap_output.txt --include info
    ```
 
 5. **Use Threshold to Control Rare Field Display**:
    ```bash
-   python3 ldap-u.py ldap_output.txt --level 3
+   python3 LDAP-Scout.py ldap_output.txt --level 3
    ```
 
 ## Example Output
